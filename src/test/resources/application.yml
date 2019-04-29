@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:db_users;MODE=MYSQL
+    username: root
+    password: 123456
+    schema: classpath:db/schema.sql
+    data: classpath:data/data.sql
+
+mybatis:
+  typeAliasesPackage: com.shinley.model
+  mapperLocations: classpath:mapper/*.xml
